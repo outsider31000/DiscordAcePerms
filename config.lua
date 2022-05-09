@@ -1,7 +1,10 @@
 Config = {
 	Server_Name = "[SERVER_NAME]",
-	Discord_Link = '', --DISCORD INVITE
-	Website_Link = '', -- WEBSITE IF YOU HAVE ONE
+	Discord_Link = '', --DISCORD INVITE 1st button
+	Website_Link = '', -- WEBSITE IF YOU HAVE ONE 2scnd button
+	button = "button",
+	IconLink = "",
+	Linkbutton = "", -- 3rd button
 	roleList = {
 		--DISCORD ROLE ID ,  GROUP SET IN YOUR PERMS.CFG
 		{778070857964716033, "group.member"}, 
