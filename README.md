@@ -10,18 +10,20 @@ https://docs.badger.store/fivem-discord-scripts/discordaceperms
 
 The permissions for a user update after every restart when they first login (so long as they have the discord role ID associated with the group in the list).
 
-#### How to set it up:
+- add this to your perms.cfg or server.cfg
+- `add_ace resource.DiscordAcePerms command.add_principal allow`
+- `add_ace resource.DiscordAcePerms command.remove_principal allow`
+- edit the config file
+- you dont need to add this `#add_principal identifier.steam:xxxxxxxx group.admin`
+
+this script replaces steam id with discord id 
+
+example for server.cfg or perms.cfg
+
+* add_ace group.admin chat.admin allow
+* add_ace group.admin chat.staffChannel allow
+
+the discord role admin if set in the config  will have these permisions
+so do the same for any script that uses ace permissions 
 
 
-The 1s should be replaced with IDs of the respective roles in your discord server. The quotes with groups should represent the groups in your perms.cfg or server.cfg.
-```lua
-roleList = {
-{1, "group.tc"}, --[[ Trusted-Civ --- ]] 
-{1, "group.faa"}, --[[ FAA --- ]]
-{1, "group.donator"}, --[[ Donator --- ]]
-{1, "group.trialModerator"}, --[[ T-Mod --- ]] 
-{1, "group.moderator"}, --[[ Moderator --- ]]
-{1, "group.admin"}, --[[ Admin --- ]]
-{1, "group.admin"}, --[[ Management --- ]]
-{1, "group.owner"}, --[[ Owner --- ]]
-}
