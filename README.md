@@ -7,7 +7,8 @@ https://docs.badger.store/fivem-discord-scripts/discordaceperms
 
 
 #### Installation Information:
-
+ [TUTORIAL](https://www.youtube.com/watch?v=blOnyLfevw8&ab_channel=BGHDDevelopment)
+ 
 The permissions for a user update after every restart when they first login (so long as they have the discord role ID associated with the group in the list).
 - you need [badger api](https://github.com/outsider31000/Badger_Discord_API) script for this to work.
 - ensure both scripts at the top of your `resources.cfg`
