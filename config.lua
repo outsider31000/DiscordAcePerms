@@ -1,13 +1,18 @@
 Config = {
 	Server_Name = "[SERVER_NAME]",
-	Discord_Link = 'https://discord.gg/',
-	Website_Link = 'https://badger.store/',
+	Discord_Link = '', --DISCORD INVITE
+	Website_Link = '', -- WEBSITE IF YOU HAVE ONE
 	roleList = {
-		{778070857964716033, "group.member"},
-		{778084605198204948, "group.booster"},
-		{778078566726369360, "group.certified"},
-		{778076976345907250, "group.subscriber"},
+		--DISCORD ROLE ID ,  GROUP SET IN YOUR PERMS.CFG
+		{778070857964716033, "group.member"}, 
 		{778074943824592916, "group.moderator"}, 
 		{778075273065136149, "group.owner"}, 
 	},
 }
+
+-- add this to your perms.cfg or server.cfg
+-- add_ace resource.DiscordAcePerms command.add_principal allow
+-- add_ace resource.DiscordAcePerms command.remove_principal allow
+
+-- you dont need to add this #add_principal identifier.steam:xxxxxxxx group.admin 
+-- this script replaces steam id with discord id 
